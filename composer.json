@@ -1,0 +1,22 @@
+{
+    "name": "silverstores/module-btcz",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "bgaiteiro@gmail.com",
+            "name": "SilverStoreS"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SilverStoreS\\Btcz\\": ""
+        }
+    }
+}

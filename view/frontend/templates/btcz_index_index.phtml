@@ -1,0 +1,29 @@
+<?php 
+	/*
+	$jsondata = '{
+		"url_id":"c7353b25c35465e061ed1db4b9d04b54",
+		"amount_needed":"40.1276",
+		"amount_received":"0",
+		"generated":"t1UcyfdP1gSkCtPPJ8JYzocE1yFCBFEXrbh",
+		"state":"2",
+		"tx_right":"",
+		"timestamp_start":"1522011792",
+		"timestamp_end":"1522012992",
+		"timestamp_initiated":"1522011803",
+		"confirmations":"0",
+		"timeComplete":"",
+		"invoicename":"000000012",
+		"b64_successurl":"",
+		"currentTime":"1522012992"
+	}';
+	*/
+?>
+<?php if (isset($_POST["data"])): ?>
+	<?php $jsondata = $_POST["data"]; ?>
+	<?php if ($jsondata != null): ?>
+		<?php echo $block->changeState($jsondata); ?>
+	<?php endif; ?>
+<?php else: ?>
+	<?php echo 'No data!'; ?>
+	<?php echo $block->noData(); ?>
+<?php endif; ?>
